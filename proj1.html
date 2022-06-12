@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Disease Detection</title>
+  <style>
+      header{
+          background: url(img/cnn.jpg);
+          background-size: cover;
+          background-position: center;
+          min-height: 600px;
+      }
+      @media screen and (max-width: 500px){
+          header{
+              min-height: 450px;
+          }
+      }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo center">Automatic Disease Detection</a>
+          </div>
+      </nav>
+
+  </header>
+
+  <!-- card -->
+  <div class="container">
+    <h2>Select the disease to be diagnosed</h2>
+    <div class="row">
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/bt.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Brain Tumour</span>
+            <p>A brain tumor is a collection, or mass, of abnormal cells in your brain. Your skull, which encloses your brain, is very rigid. Any growth inside such a restricted space can cause problems. Brain tumors can be cancerous (malignant) or noncancerous (benign).
+                <b>Symptoms:</b> Headache</p>
+          </div>
+          <div class="card-action">
+            <a href="projbt.html">Click Here to Start</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col s12 l6">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/tb.jpg" alt="">
+            </div>
+              <div class="card-content">
+                <span class="card-title">Tuberculosis</span>
+                <p>Tuberculosis (TB) is a disease caused by bacteria called Mycobacterium tuberculosis. The bacteria usually attack the lungs, but they can also damage other parts of the body. TB spreads through the air when a person with TB of the lungs or throat coughs, sneezes, or talks.
+                   <br><b>Symptoms:</b>  Cough</p>
+              </div>
+              <div class="card-action">
+                <a href="proj2.html">Click Here to Start</a>
+              </div>
+            </div>
+          </div>
+    </div>
+ 
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        
+    });
+  </script>
+</body>
+</html>

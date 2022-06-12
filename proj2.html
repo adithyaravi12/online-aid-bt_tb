@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Disease Detection</title>
+  <style>
+      header{
+          background: url(img/cnn.jpg);
+          background-size: cover;
+          background-position: center;
+          min-height: 700px;
+      }
+      @media screen and (max-width: 500px){
+          header{
+              min-height: 450px;
+          }
+      }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+            <a href="#" class="brand-logo center">Automatic Disease Detection</a>
+            </div>
+    </nav>
+
+  </header>
+
+  <!-- grid & button -->
+  <div class="container">
+    <h2>Details</h2>
+      <form action="get">
+              Name: <input type="text">
+              Age:<input type="number">
+              Email: <input type="email">
+      </form>
+    <h2>Medical Conditon</h2>
+    <form action="get">
+        Symptom: <input type="text">
+        Any medical history: <input type="text">    
+    </form>
+    <form action="get" name="scan">
+        Upload scan: <input type="file" id="img" name="img" accept="image/*">
+    </form>
+    <script src="tb.js"></script>
+      <button type="submit" id="repGen" class="btn grey darken-1 waves-effect waves-light right" >
+        <span>Generate Report</span>
+        <i class="material-icons right">send</i>
+      </button>
+      <br><br><br>
+  </div>
+  
+  <div id="result" class="container">
+    <canvas class="center" id="tumorImg" width="512" height="512">
+
+    </canvas>
+    <p id="result">
+
+    </p>
+  </div>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#repGen').click( generateReport );
+      canvas =  document.getElementById('tumorImg');
+      context = canvas.getContext('2d');
+      // $('img').change(loadImage);
+    });
+  </script>
+</body>
+</html>
