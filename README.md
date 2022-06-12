@@ -10,22 +10,23 @@ A online application with a trained CNN model detects the existence of a brain t
 
 ## Documentation
 
-[Dataset](https://linktodocumentation)
+[Brain Tumour Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
+[Tuberculosis Dataset](https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset)
 
 
 ## Tech Stack
 
-**Client:** 
+**Client:** HTML, Materialize CSS, JavaScript
 
-**Server:** 
+**Server:** JavaScript, Python, Tensorflow
 
 
-## Gist of the project
+<!-- ## Gist of the project
 
     1.
     2.
     3.
-    
+     -->
 
 
 ## Run Locally
