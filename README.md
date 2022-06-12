@@ -57,7 +57,8 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://github.com/adithyaravi12/online-aid-bt_tb/blob/main/proj1.gif)
+![App Screenshot1](https://github.com/adithyaravi12/online-aid-bt_tb/blob/main/proj1.gif)
+![App Screenshot2](https://github.com/adithyaravi12/online-aid-bt_tb/blob/main/tbbt.gif)
 
 
 ## Authors
