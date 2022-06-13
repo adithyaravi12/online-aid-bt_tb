@@ -1,7 +1,7 @@
 
 # Online Aid For Detecting Brain Tumor And Tuberculosis Using Deep Learning
 
-A online application with a trained CNN model detects the existence of a brain tumor or tuberculosis using photographs of the patient's x-ray and MRI scan.
+An online application with a trained CNN model detects the existence of a brain tumor or tuberculosis using photographs of the patient's x-ray and MRI scan.
 
 ## Publication
 
